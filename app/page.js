@@ -237,12 +237,12 @@ export default function UploadPage() {
                   
                   <label htmlFor="image" className="cursor-pointer block">
                     <div className="w-16 h-16 mx-auto mb-4 bg-gray-100 rounded-full flex items-center justify-center">
-                      <FiImage className="text-2xl text-gray-400" />
+                      <FiImage className="text-2xl text-black" />
                     </div>
-                    <p className="text-gray-700 mb-2">
+                    <p className="text-black mb-2">
                       <span className="text-blue-600 font-medium">Click to browse</span> or drag & drop
                     </p>
-                    <p className="text-sm text-gray-500">Max file size: 5MB</p>
+                    <p className="text-sm text-black">Max file size: 5MB</p>
                   </label>
                 </div>
 
@@ -253,8 +253,8 @@ export default function UploadPage() {
                     animate={{ opacity: 1, scale: 1 }}
                     className="mt-6"
                   >
-                    <p className="text-sm font-medium text-gray-700 mb-3">Preview:</p>
-                    <div className="relative w-full h-48 rounded-lg overflow-hidden border border-gray-200">
+                    <p className="text-sm font-medium text-black mb-3">Preview:</p>
+                    <div className="relative w-full h-48 rounded-lg overflow-hidden border border-black">
                       <Image
                         src={preview}
                         alt="Preview"
@@ -268,7 +268,7 @@ export default function UploadPage() {
                 {/* Form Fields */}
                 <div className="space-y-4 mt-6">
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium text-black mb-2">
                       Image Title
                     </label>
                     <input
@@ -276,21 +276,21 @@ export default function UploadPage() {
                       name="title"
                       value={formData.title}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      className="w-full px-4 py-3 border border-black rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black"
                       placeholder="Enter image title"
                       required
                     />
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium text-black mb-2">
                       Description
                     </label>
                     <textarea
                       name="description"
                       value={formData.description}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      className="w-full px-4 py-3 border text-black border-black rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                       placeholder="Optional description"
                       rows="3"
                     />
@@ -305,7 +305,7 @@ export default function UploadPage() {
                         name="category"
                         value={formData.category}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        className="w-full px-4 text-black py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                       >
                         <option value="hero">Hero Images</option>
                         <option value="service">Service Images</option>
@@ -323,7 +323,7 @@ export default function UploadPage() {
                         name="type"
                         value={formData.type}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        className="w-full text-black px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                       >
                         <option value="hero">Hero Banner</option>
                         <option value="thumbnail">Thumbnail</option>
